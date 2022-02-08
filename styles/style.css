@@ -1,0 +1,18 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+.side-image {
+    width: 33vw;
+    background-color: antiquewhite;
+    
+}
+
+main {
+    background-color: bisque;
+    width: 67vw;
+}
