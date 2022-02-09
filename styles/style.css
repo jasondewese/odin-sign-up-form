@@ -1,11 +1,13 @@
 @font-face {
     font-family: 'Norse Bold';
     src: url("../media/fonts/Norse-Bold.otf") format("opentype");
+    
 }
 
 html {
     box-sizing: border-box;
     font-family: sans-serif;
+    font-size: 14px;
 }
 
 body {
@@ -47,20 +49,23 @@ main {
     align-items: center;
     width: 100%;
     position: absolute;
-    top: 20vh;
+    top: 20%;
     /*transparent background for ease of reading text on the image*/
     background-color: rgba(0, 0, 0, 0.4);
 }
 
 .logo {
     width: 100px;
+    max-width:10vw;
     height: auto;
     padding: 15px 0;
 }
 
 .logo-text {
     color: #EBEBEB;
-    font-size: 100px;
+    /*logo font will resize with the screen*/
+    font-size: min(10vh, 10vw);
+
     font-family: 'Norse Bold';
 }
 
@@ -70,9 +75,11 @@ main {
     justify-content: center;
     align-items: center;
     position: absolute;
+    /*photo credit fixed to bottom of image*/
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.0);
     color: #CCCCCC;
+    font-size: min(14px, 2vw);
 }
 
 .image-citation a {
