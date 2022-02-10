@@ -25,7 +25,6 @@ body {
 
 .side-image {
     width: 33vw;
-    background-color: antiquewhite;
     /* to allow absolute positioning of logo within this element*/
     position: relative;
 }
@@ -77,6 +76,7 @@ body {
     background-color: rgba(0, 0, 0, 0.0);
     color: #CCCCCC;
     font-size: min(14px, 2vw);
+    padding-bottom: 10px;
 }
 
 .image-citation a {
