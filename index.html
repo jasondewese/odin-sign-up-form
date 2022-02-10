@@ -24,7 +24,62 @@
     </div>
 
     <main>
-        here is some more content
+        <div class="main-text">
+            <p>This is not a real online service! You know you need somthing<br>
+                like this in your life to help you realize your deepest dreams. <br>
+                Sign up <em>now</em> to get started.
+            </p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+
+        <div class="sign-up-info">
+            <div class="motivate-text">
+                Let's do this!
+            </div>
+            <form action="http://httpbin.org/post" method="post" class="register-form">
+
+                <div class="name-input">
+                    <div class="input-wrapper">
+                        <label for="first_name">First Name:</label>
+                        <input type="text" name="first_name" id="first_name" placeholder="Bob...">
+                    </div>
+                    <div class="input-wrapper"> 
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" name="last_name" id="last_name" placeholder="Dylan...">
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <div class="input-wrapper">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="abc@gmail.com">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="phone">Phone #</label>
+                        <input type="tel" name="phone" id="phone" placeholder="123-456-7890">
+                    </div>
+                </div>   
+                
+                <div class="password-input">
+                    <div class="input-wrapper">
+                        <label for="password">Password: </label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="pass_confirm">Confirm Password:</label>
+                        <input type="password" name="pass_confirm" id="pass_confirm">
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+
+        <div class="log-in-section">
+            <div class="button-wrapper">
+                <button class="button">Create Account</button>
+            </div>
+            <p>Already have an account? <a href="">Log in</a> </p>
+        </div>
     </main>
 
    

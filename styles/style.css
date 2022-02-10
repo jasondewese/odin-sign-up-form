@@ -30,10 +30,7 @@ body {
     position: relative;
 }
 
-main {
-    background-color: bisque;
-    width: 67vw;
-}
+
 
 .side-image > img {
     /*take up available width but keep height ratio*/
@@ -85,4 +82,9 @@ main {
 .image-citation a {
     
     color: #CCCCCC;
+}
+
+main {
+    background-color: #EEEEEE;
+    width: 67vw;
 }
