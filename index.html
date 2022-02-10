@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Sign Up Page</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -28,46 +37,46 @@
         <div class="main-text">
             <p>This is not a real online service! You know you need somthing<br>
                 like this in your life to help you realize your deepest dreams. <br>
-                Sign up <em>now</em> to get started.
+                Sign up <span class="italics">now</span> to get started.
             </p>
-            <p>You <em>know</em> you want to.</p>
+            <p>You <span class="italics">know</span> you want to.</p>
         </div>
 
         <div class="sign-up-info">
             <div class="motivate-text">
                 Let's do this!
             </div>
-            <form action="http://httpbin.org/post" method="post" class="register-form">
+            <form action="http://httpbin.org/post" method="post" class="register-form" id="register-form">
 
                 <div class="name-input">
                     <div class="input-wrapper">
-                        <label for="first_name">First Name:</label>
-                        <input type="text" name="first_name" id="first_name" placeholder="Bob...">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" name="first_name" id="first_name" placeholder="Thor">
                     </div>
                     <div class="input-wrapper"> 
-                        <label for="last_name">Last Name:</label>
-                        <input type="text" name="last_name" id="last_name" placeholder="Dylan...">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" name="last_name" id="last_name" placeholder="Odinson">
                     </div>
                 </div>
 
                 <div class="contact-info">
                     <div class="input-wrapper">
-                        <label for="email">Email: </label>
+                        <label for="email">EMAIL </label>
                         <input type="email" name="email" id="email" placeholder="abc@gmail.com">
                     </div>
                     <div class="input-wrapper">
-                        <label for="phone">Phone #</label>
+                        <label for="phone">PHONE NUMBER</label>
                         <input type="tel" name="phone" id="phone" placeholder="123-456-7890">
                     </div>
                 </div>   
                 
                 <div class="password-input">
                     <div class="input-wrapper">
-                        <label for="password">Password: </label>
+                        <label for="password">PASSWORD</label>
                         <input type="password" name="password" id="password">
                     </div>
                     <div class="input-wrapper">
-                        <label for="pass_confirm">Confirm Password:</label>
+                        <label for="pass_confirm">CONFIRM PASSWORD</label>
                         <input type="password" name="pass_confirm" id="pass_confirm">
                     </div>
                 </div>
@@ -77,7 +86,7 @@
 
         <div class="log-in-section">
             <div class="button-wrapper">
-                <button class="button">Create Account</button>
+                <button class="button" type="submit" form="register-form">Create Account</button>
             </div>
             <p>Already have an account? <a href="">Log in</a> </p>
         </div>
