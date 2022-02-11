@@ -73,11 +73,13 @@
                 <div class="password-input">
                     <div class="input-wrapper">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" class="error" required>
+                        <div class="password-message">* Password required</div>
                     </div>
                     <div class="input-wrapper">
                         <label for="pass_confirm">CONFIRM PASSWORD</label>
-                        <input type="password" name="pass_confirm" id="pass_confirm">
+                        <input type="password" name="pass_confirm" id="pass_confirm" class="error">
+                        <div class="pass-confirm-message error"></div>
                     </div>
                 </div>
                 
@@ -86,12 +88,13 @@
 
         <div class="log-in-section">
             <div class="button-wrapper">
-                <button class="button" type="submit" form="register-form">Create Account</button>
+                <button class="button" type="button" form="register-form">Create Account</button>
             </div>
             <p>Already have an account? <a href="">Log in</a> </p>
         </div>
     </main>
 
    
+    <script src="scripts/script.js"></script>
 </body>
 </html>

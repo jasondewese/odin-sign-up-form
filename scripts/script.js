@@ -4,6 +4,7 @@ const passwordInput = document.querySelector('#password');
 const passConfirmInput = document.querySelector('#pass_confirm');
 const submitButton = document.querySelector('.button');
 
+//determine if password matches confirm password box input
 let passwordCheck = function() {
     
     if (passConfirmInput.value != passwordInput.value) {
@@ -19,6 +20,7 @@ let passwordCheck = function() {
     }
 }
 
+//determines if there is text in the password field
 let isPassword = function() {
     if (passwordInput.value.length == null || passwordInput.value.length == '') {
         passwordMessage.textContent = '* Password required';
@@ -27,9 +29,7 @@ let isPassword = function() {
     }
 }
 
-
-
-
+//only allow submission if the password fields are currently set as 'valid' inputs
 let submitAttempt = function() {
     let canSubmit = passConfirmInput.className == 'valid' ? true : false;
 

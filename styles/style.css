@@ -182,3 +182,23 @@ button:hover {
     text-decoration: none;
     color: #596D48;
 }
+
+.name-input input:focus, .contact-info input:focus {
+    /*remove default black outline during focus*/
+    outline: none;
+    border-color: blue;   
+}
+
+.pass-confirm-message, .password-message {
+    color: red;
+}
+
+.error {
+    outline: none;
+    border-color: red; 
+    
+}
+.valid {
+    outline: none;
+    border-color: #596D48; 
+}
